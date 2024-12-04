@@ -138,6 +138,3 @@ authors: [<author1_id>, <author2_id>]   # 针对多个作者
 |`**/*`|`${documentDirName}/imgs/${fileName}`|在对任一目录的文件进行图片粘贴时，<br> 在当前文件的同级目录下创建 `imgs` <br> 文件夹并将图片放到 `imgs` 文件夹中|
 
 ![alt text](../assets/img/article/PixPin_2024-11-29_21-07-37.png)
-
-### 评论区配置
-
