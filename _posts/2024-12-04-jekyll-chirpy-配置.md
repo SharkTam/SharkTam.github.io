@@ -125,3 +125,16 @@ authors: [<author1_id>, <author2_id>]   # 针对多个作者
 ---
 ```
 >从 _data/authors.yml 文件中读取作者信息的好处是页面将具有 twitter:creator 元标记，这丰富了 Twitter Cards ，并且有利于 SEO 。
+
+### vscode 粘贴图片配置
+
+`VSCode 1.79` 更新，支持 `Markdown` 中直接粘贴图片！配置方法：
+
+`ctrl ,` 打开 vscode 的设置界面，搜索 `copyfile`，修改 `Markdown > Copy Files:Destination`
+
+|item|value|function|
+|---|---|---|
+|`SharkTam.github.io/_posts/*`|`../assets/img/article/${fileName}`| 对 `SharkTam.github.io/_posts/` <br> 下的文件进行图片粘贴时，图片存储到<br>  `SharkTam.github.io/assets/img/article/`<br>  目录下|
+|`**/*`|`${documentDirName}/imgs/${fileName}`|在对任一目录的文件进行图片粘贴时，<br> 在当前文件的同级目录下创建 `imgs` <br> 文件夹并将图片放到 `imgs` 文件夹中|
+
+![alt text](../assets/img/article/PixPin_2024-11-29_21-07-37.png)
