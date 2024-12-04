@@ -8,11 +8,12 @@ category:
 tags: [jekyll]
 published: true
 math: true
+author: tam
 ---
 
-- [x] 安装 docker desktop，下载 jekyll 镜像，fork chirpy 项目。
+### 安装 docker desktop，下载 jekyll 镜像，fork chirpy 项目。
 
-- [x] 修改头像样式：
+### 修改头像样式：
 
   ```css
   /* 修改头像背景颜色 */
@@ -54,9 +55,9 @@ math: true
   }
   ```
 
-- [ ] 修改网页 favicons
+### 修改网页 favicons
 
-- [ ] 配置 jekyll compose
+### 配置 jekyll compose
 
   Add this line to your application's Gemfile:
 
@@ -102,3 +103,25 @@ math: true
   > 将上述的环境变量添加到 `~/.zshrc` 中，然后 `zsh ~/.zshrc`，`vscode` 将上面的 `atom` 改为 `code` 即可
 
   **Set default front matter for drafts and posts**: 见官方文档
+
+### author 信息配置
+
+帖子的作者信息通常不需要在 头信息 中填写，默认情况下会从配置文件中 social.name 变量和 social.links 的第一个条目中获取。但您也可以按如下方式覆盖它：
+
+在 `_data/authors.yml` 中添加作者信息（如果您的网站没有此文件，请立即创建一个）。
+```
+<author_id>:
+  name: <full name>
+  twitter: <twitter_of_author>
+  url: <homepage_of_author>
+```
+
+然后用 `author` 指定单个条目或用 `authors` 指定多个条目：
+```
+---
+author: <author_id>                     # 针对单个作者
+# or
+authors: [<author1_id>, <author2_id>]   # 针对多个作者
+---
+```
+>从 _data/authors.yml 文件中读取作者信息的好处是页面将具有 twitter:creator 元标记，这丰富了 Twitter Cards ，并且有利于 SEO 。
