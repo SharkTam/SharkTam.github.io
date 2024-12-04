@@ -9,7 +9,11 @@ tags: [jekyll]
 published: true
 math: true
 author: tam
+pin: true
+
+image: /assets/img/article/PixPin_2024-11-28_20-35-57.png
 ---
+
 
 ### 相关命令
 
