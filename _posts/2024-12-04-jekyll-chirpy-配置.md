@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jekyll chirpy 配置
+title: jekyll chirpy 配置及使用
 date: 2024-12-04 07:12 +0800
 description: 
 image: 
@@ -10,6 +10,44 @@ published: true
 math: true
 author: tam
 ---
+
+### 相关命令
+
+- 在本地启动 jekyll：`bundle exec jekyll s`；
+- 创建新文件：`bundle exec jekyll post "new post"`；
+- 创建草稿：`bundle exec jekyll draft "new draft"`;
+
+### 相关语法
+
+```
+> 显示 `tip` 类型提示的例子。
+{: .prompt-tip }
+
+> 显示 `info` 类型提示的例子。
+{: .prompt-info }
+
+> 显示 `warning` 类型提示的例子。
+{: .prompt-warning }
+
+> 显示 `danger` 类型提示的例子。
+{: .prompt-danger }
+```
+> 显示 `tip` 类型提示的例子。
+{: .prompt-tip }
+
+> 显示 `info` 类型提示的例子。
+{: .prompt-info }
+
+> 显示 `warning` 类型提示的例子。
+{: .prompt-warning }
+
+> 显示 `danger` 类型提示的例子。
+{: .prompt-danger }
+
+### 相关网站
+
+- [jekyll-compose（用于快速创建文章 ）](https://github.com/jekyll/jekyll-compose)
+- [配置评论区](https://utteranc.es/?installation_id=57954315&setup_action=install)
 
 ### 安装 docker desktop，下载 jekyll 镜像，fork chirpy 项目。
 
@@ -55,7 +93,7 @@ author: tam
   }
   ```
 
-### 修改网页 favicons
+### [修改网页 favicons](https://pansong291.github.io/chirpy-demo-zhCN/posts/customize-the-favicon/)
 
 ### 配置 jekyll compose
 
