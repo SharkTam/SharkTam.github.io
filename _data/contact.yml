@@ -3,6 +3,10 @@
 - type: github
   icon: "fab fa-github"
 
+- type: gitbook
+  icon: "fa-solid fa-book"
+  url: "https://app.gitbook.com/o/2jDAeHPcsu2RyjsjWAIB/s/5jwPJNhxeBhLXwXxlQG9/"
+
 # - type: twitter
 #   icon: "fa-brands fa-x-twitter"
 
